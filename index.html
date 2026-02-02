@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Clean Dallas | We Handle Residential & Commercial Pressure Washing</title>
+    <meta name="description" content="Pressure washing in Dallas for driveways, siding, decks, and commercial buildings. We focus on exterior cleaning services only.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .hero {
+            background: #06b6d4;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .scope-intro {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+        }
+        .scope-intro h2 {
+            color: #0891b2;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .scope-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .scope-section {
+            background: #ecfeff;
+            padding: 3rem 2rem;
+            margin: 0 -2rem 3rem -2rem;
+        }
+        .scope-section h2 {
+            text-align: center;
+            color: #0891b2;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .scope-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .scope-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 4px solid #06b6d4;
+        }
+        .scope-card h3 {
+            color: #0891b2;
+            margin-bottom: 1rem;
+        }
+        .scope-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        .boundaries-section {
+            margin: 3rem 0;
+        }
+        .boundaries-section h2 {
+            color: #0891b2;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .boundaries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .boundary-card {
+            background: #fef3c7;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #fbbf24;
+        }
+        .boundary-card h3 {
+            color: #92400e;
+            margin-bottom: 0.75rem;
+        }
+        .boundary-card p {
+            color: #78350f;
+            font-size: 0.95rem;
+        }
+        .specialty-note {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 3rem 0;
+        }
+        .specialty-note h3 {
+            color: #1e40af;
+            margin-bottom: 0.75rem;
+        }
+        .specialty-note p {
+            color: #1e3a8a;
+            line-height: 1.7;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #0891b2;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #06b6d4;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            opacity: 0.95;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Power Clean Dallas</div>
+            <div class="phone">📞 (972) 284-0913</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>We Handle Residential & Commercial Pressure Washing</h1>
+        <p>Focused on exterior cleaning services for homes and businesses.</p>
+    </section>
+
+    <div class="container">
+        <div class="scope-intro">
+            <h2>Our Pressure Washing Focus</h2>
+            <p>We specialize in exterior pressure washing and soft washing services. By limiting our scope to what we do best, we can maintain high-quality equipment and expertise in proper cleaning techniques for different surfaces.</p>
+        </div>
+
+        <section class="scope-section">
+            <h2>Surfaces We Clean</h2>
+            <div class="scope-grid">
+                <div class="scope-card">
+                    <h3>Driveways & Sidewalks</h3>
+                    <p>Concrete and asphalt cleaning. Remove oil stains, dirt, and grime. Restore original appearance.</p>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Home Siding</h3>
+                    <p>Vinyl, brick, and wood siding. Soft washing for delicate surfaces. Remove mold, mildew, and algae.</p>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Decks & Patios</h3>
+                    <p>Wood and composite decking. Stone and concrete patios. Preparation for staining or sealing.</p>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Fences</h3>
+                    <p>Wood and vinyl fence cleaning. Remove years of weathering and discoloration.</p>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Commercial Buildings</h3>
+                    <p>Storefronts, office buildings, and warehouses. Parking lots and loading docks.</p>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Parking Garages</h3>
+                    <p>Concrete deck cleaning. Oil stain removal. Regular maintenance programs available.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="boundaries-section">
+            <h2>What We Don't Do</h2>
+            <div class="boundaries-grid">
+                <div class="boundary-card">
+                    <h3>Interior Cleaning</h3>
+                    <p>We don't do carpet cleaning, floor cleaning, or any interior work. Exterior only.</p>
+                </div>
+
+                <div class="boundary-card">
+                    <h3>Window Cleaning</h3>
+                    <p>We don't clean windows—we refer those jobs to window cleaning specialists.</p>
+                </div>
+
+                <div class="boundary-card">
+                    <h3>Gutter Cleaning</h3>
+                    <p>We clean the outside of gutters but don't remove debris from inside. Different specialty.</p>
+                </div>
+
+                <div class="boundary-card">
+                    <h3>Roof Cleaning</h3>
+                    <p>We don't get on roofs. Too many liability and safety concerns for our crew.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="specialty-note">
+            <h3>💧 Why Focus on Pressure Washing Only?</h3>
+            <p>Pressure washing requires specific equipment, water reclamation knowledge, and surface-specific techniques. Using the wrong pressure or cleaning method damages surfaces. By specializing in exterior pressure washing, we can invest in the right equipment and train our team properly rather than spreading ourselves thin across multiple services.</p>
+        </div>
+
+        <section class="form-section">
+            <h2>Request Quote</h2>
+            <p class="subtitle">Tell us what you need cleaned</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="DFW-PRESSURE-001">
+                <input type="hidden" name="market" value="Dallas">
+                <input type="hidden" name="industry" value="Pressure Washing">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="powercleandallas.com">
+                
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Service Address *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="property_type">Property Type *</label>
+                    <select id="property_type" name="property_type" required>
+                        <option value="">Select...</option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="surface_type">What Needs Cleaning? *</label>
+                    <select id="surface_type" name="surface_type" required>
+                        <option value="">Select...</option>
+                        <option value="Driveway/Sidewalk">Driveway/Sidewalk</option>
+                        <option value="Home Siding">Home Siding</option>
+                        <option value="Deck/Patio">Deck/Patio</option>
+                        <option value="Fence">Fence</option>
+                        <option value="Commercial Building">Commercial Building</option>
+                        <option value="Parking Garage">Parking Garage</option>
+                        <option value="Multiple Surfaces">Multiple Surfaces</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details *</label>
+                    <textarea id="details" name="details" required placeholder="Describe the surfaces and approximate size..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Get Quote</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Power Clean Dallas. Professional Pressure Washing.</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
